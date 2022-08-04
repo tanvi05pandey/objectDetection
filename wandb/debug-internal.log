@@ -1,0 +1,64 @@
+2022-02-06 22:50:04,017 INFO    MainThread:577 [internal.py:wandb_internal():92] W&B internal server running at pid: 577, started at: 2022-02-06 22:50:04.017473
+2022-02-06 22:50:04,020 INFO    WriterThread:577 [datastore.py:open_for_write():77] open: /content/yolov5/wandb/run-20220206_225003-knuj1uai/run-knuj1uai.wandb
+2022-02-06 22:50:04,021 DEBUG   SenderThread:577 [sender.py:send():235] send: header
+2022-02-06 22:50:04,021 DEBUG   HandlerThread:577 [handler.py:handle_request():131] handle_request: check_version
+2022-02-06 22:50:04,021 DEBUG   SenderThread:577 [sender.py:send_request():249] send_request: check_version
+2022-02-06 22:50:04,091 DEBUG   SenderThread:577 [sender.py:send():235] send: run
+2022-02-06 22:50:04,101 INFO    SenderThread:577 [sender.py:_maybe_setup_resume():490] checking resume status for None/YOLOv5/knuj1uai
+2022-02-06 22:50:04,208 DEBUG   HandlerThread:577 [handler.py:handle_request():131] handle_request: run_start
+2022-02-06 22:50:04,217 INFO    SenderThread:577 [dir_watcher.py:__init__():169] watching files in: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files
+2022-02-06 22:50:04,217 INFO    SenderThread:577 [sender.py:_start_run_threads():812] run started: knuj1uai with start time 1644187803
+2022-02-06 22:50:04,217 DEBUG   SenderThread:577 [sender.py:send():235] send: summary
+2022-02-06 22:50:04,217 INFO    SenderThread:577 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-06 22:50:05,216 INFO    Thread-8  :577 [dir_watcher.py:_on_file_created():217] file/dir created: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/wandb-summary.json
+2022-02-06 22:50:06,553 DEBUG   HandlerThread:577 [meta.py:__init__():36] meta init
+2022-02-06 22:50:06,553 DEBUG   HandlerThread:577 [meta.py:__init__():50] meta init done
+2022-02-06 22:50:06,553 DEBUG   HandlerThread:577 [meta.py:probe():210] probe
+2022-02-06 22:50:06,556 DEBUG   HandlerThread:577 [meta.py:_setup_git():200] setup git
+2022-02-06 22:50:06,581 DEBUG   HandlerThread:577 [meta.py:_setup_git():207] setup git done
+2022-02-06 22:50:06,582 DEBUG   HandlerThread:577 [meta.py:_save_pip():54] save pip
+2022-02-06 22:50:06,583 DEBUG   HandlerThread:577 [meta.py:_save_pip():68] save pip done
+2022-02-06 22:50:06,583 DEBUG   HandlerThread:577 [meta.py:probe():248] probe done
+2022-02-06 22:50:06,588 DEBUG   SenderThread:577 [sender.py:send():235] send: files
+2022-02-06 22:50:06,588 INFO    SenderThread:577 [sender.py:_save_file():944] saving file wandb-metadata.json with policy now
+2022-02-06 22:50:06,595 DEBUG   HandlerThread:577 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-06 22:50:06,595 DEBUG   SenderThread:577 [sender.py:send_request():249] send_request: stop_status
+2022-02-06 22:50:06,650 DEBUG   SenderThread:577 [sender.py:send():235] send: config
+2022-02-06 22:50:06,852 INFO    Thread-11 :577 [upload_job.py:push():137] Uploaded file /tmp/tmps3l5lpp_wandb/1gst3jk7-wandb-metadata.json
+2022-02-06 22:50:07,216 INFO    Thread-8  :577 [dir_watcher.py:_on_file_created():217] file/dir created: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/output.log
+2022-02-06 22:50:07,216 INFO    Thread-8  :577 [dir_watcher.py:_on_file_created():217] file/dir created: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/wandb-metadata.json
+2022-02-06 22:50:07,216 INFO    Thread-8  :577 [dir_watcher.py:_on_file_created():217] file/dir created: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/requirements.txt
+2022-02-06 22:50:09,217 INFO    Thread-8  :577 [dir_watcher.py:_on_file_modified():230] file/dir modified: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/output.log
+2022-02-06 22:50:11,217 INFO    Thread-8  :577 [dir_watcher.py:_on_file_modified():230] file/dir modified: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/output.log
+2022-02-06 22:50:13,219 INFO    Thread-8  :577 [dir_watcher.py:_on_file_modified():230] file/dir modified: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/output.log
+2022-02-06 22:50:15,219 INFO    Thread-8  :577 [dir_watcher.py:_on_file_modified():230] file/dir modified: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/output.log
+2022-02-06 22:50:17,220 INFO    Thread-8  :577 [dir_watcher.py:_on_file_modified():230] file/dir modified: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/output.log
+2022-02-06 22:50:19,221 INFO    Thread-8  :577 [dir_watcher.py:_on_file_modified():230] file/dir modified: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/output.log
+2022-02-06 22:50:21,222 INFO    Thread-8  :577 [dir_watcher.py:_on_file_modified():230] file/dir modified: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/output.log
+2022-02-06 22:50:21,689 DEBUG   HandlerThread:577 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-06 22:50:21,689 DEBUG   SenderThread:577 [sender.py:send_request():249] send_request: stop_status
+2022-02-06 22:50:23,222 INFO    Thread-8  :577 [dir_watcher.py:_on_file_modified():230] file/dir modified: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/output.log
+2022-02-06 22:50:29,225 INFO    Thread-8  :577 [dir_watcher.py:_on_file_modified():230] file/dir modified: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/output.log
+2022-02-06 22:50:34,636 DEBUG   SenderThread:577 [sender.py:send():235] send: stats
+2022-02-06 22:50:35,228 INFO    Thread-8  :577 [dir_watcher.py:_on_file_modified():230] file/dir modified: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/config.yaml
+2022-02-06 22:50:36,742 DEBUG   HandlerThread:577 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-06 22:50:36,743 DEBUG   SenderThread:577 [sender.py:send_request():249] send_request: stop_status
+2022-02-06 22:50:53,817 WARNING MainThread:577 [internal.py:is_dead():381] Internal process exiting, parent pid 544 disappeared
+2022-02-06 22:50:53,817 ERROR   MainThread:577 [internal.py:wandb_internal():148] Internal process shutdown.
+2022-02-06 22:50:54,809 INFO    WriterThread:577 [datastore.py:close():281] close: /content/yolov5/wandb/run-20220206_225003-knuj1uai/run-knuj1uai.wandb
+2022-02-06 22:50:54,813 INFO    HandlerThread:577 [handler.py:finish():739] shutting down handler
+2022-02-06 22:50:54,814 INFO    SenderThread:577 [sender.py:finish():1075] shutting down sender
+2022-02-06 22:50:54,815 INFO    SenderThread:577 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-02-06 22:50:54,815 INFO    SenderThread:577 [dir_watcher.py:finish():313] scan: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files
+2022-02-06 22:50:54,816 INFO    SenderThread:577 [dir_watcher.py:finish():327] scan save: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/requirements.txt requirements.txt
+2022-02-06 22:50:54,816 INFO    SenderThread:577 [dir_watcher.py:finish():327] scan save: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/output.log output.log
+2022-02-06 22:50:54,816 INFO    SenderThread:577 [dir_watcher.py:finish():327] scan save: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/wandb-summary.json wandb-summary.json
+2022-02-06 22:50:54,816 INFO    SenderThread:577 [dir_watcher.py:finish():327] scan save: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/wandb-metadata.json wandb-metadata.json
+2022-02-06 22:50:54,817 INFO    SenderThread:577 [dir_watcher.py:finish():327] scan save: /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/config.yaml config.yaml
+2022-02-06 22:50:54,817 INFO    SenderThread:577 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-06 22:50:54,817 INFO    SenderThread:577 [file_pusher.py:join():182] waiting for file pusher
+2022-02-06 22:50:55,155 INFO    Thread-12 :577 [upload_job.py:push():137] Uploaded file /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/requirements.txt
+2022-02-06 22:50:55,158 INFO    Thread-14 :577 [upload_job.py:push():137] Uploaded file /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/wandb-summary.json
+2022-02-06 22:50:55,165 INFO    Thread-13 :577 [upload_job.py:push():137] Uploaded file /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/output.log
+2022-02-06 22:50:55,187 INFO    Thread-15 :577 [upload_job.py:push():137] Uploaded file /content/yolov5/wandb/run-20220206_225003-knuj1uai/files/config.yaml
+2022-02-06 22:50:55,863 INFO    MainThread:577 [internal.py:handle_exit():79] Internal process exited

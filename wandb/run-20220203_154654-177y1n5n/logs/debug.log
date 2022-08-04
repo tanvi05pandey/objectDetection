@@ -1,0 +1,24 @@
+2022-02-03 15:46:54,624 INFO    MainThread:220835 [wandb_setup.py:_flush():75] Loading settings from /WAVE/users/unix/tpandey/.config/wandb/settings
+2022-02-03 15:46:54,624 INFO    MainThread:220835 [wandb_setup.py:_flush():75] Loading settings from /WAVE/users/unix/tpandey/wandb/settings
+2022-02-03 15:46:54,624 INFO    MainThread:220835 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-02-03 15:46:54,624 INFO    MainThread:220835 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'objectDetection.py', 'program': 'objectDetection.py'}
+2022-02-03 15:46:54,625 INFO    MainThread:220835 [wandb_init.py:_log_setup():386] Logging user logs to /WAVE/users/unix/tpandey/wandb/run-20220203_154654-177y1n5n/logs/debug.log
+2022-02-03 15:46:54,625 INFO    MainThread:220835 [wandb_init.py:_log_setup():387] Logging internal logs to /WAVE/users/unix/tpandey/wandb/run-20220203_154654-177y1n5n/logs/debug-internal.log
+2022-02-03 15:46:54,626 INFO    MainThread:220835 [wandb_init.py:init():420] calling init triggers
+2022-02-03 15:46:54,626 INFO    MainThread:220835 [wandb_init.py:init():425] wandb.init called with sweep_config: {}
+config: {}
+2022-02-03 15:46:54,627 INFO    MainThread:220835 [wandb_init.py:init():471] starting backend
+2022-02-03 15:46:54,627 INFO    MainThread:220835 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-02-03 15:46:54,658 INFO    MainThread:220835 [backend.py:ensure_launched():219] starting backend process...
+2022-02-03 15:46:54,672 INFO    MainThread:220835 [backend.py:ensure_launched():224] started backend process with pid: 220846
+2022-02-03 15:46:54,678 INFO    MainThread:220835 [wandb_init.py:init():480] backend started and connected
+2022-02-03 15:46:54,684 INFO    MainThread:220835 [wandb_init.py:init():550] updated telemetry
+2022-02-03 15:46:54,785 INFO    MainThread:220835 [wandb_init.py:init():581] communicating current version
+2022-02-03 15:46:55,522 INFO    MainThread:220835 [wandb_init.py:init():586] got version response 
+2022-02-03 15:46:55,522 INFO    MainThread:220835 [wandb_init.py:init():596] communicating run to backend with 30 second timeout
+2022-02-03 15:47:25,525 INFO    MainThread:220835 [interface_shared.py:_communicate_run():313] couldn't get run from backend
+2022-02-03 15:47:25,525 ERROR   MainThread:220835 [wandb_init.py:init():601] backend process timed out
+2022-02-03 15:47:25,525 ERROR   MainThread:220835 [wandb_init.py:init():610] encountered error: Error communicating with wandb process
+try: wandb.init(settings=wandb.Settings(start_method='fork'))
+or:  wandb.init(settings=wandb.Settings(start_method='thread'))
+For more info see: https://docs.wandb.ai/library/init#init-start-error

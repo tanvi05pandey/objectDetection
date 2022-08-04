@@ -1,0 +1,70 @@
+2022-02-04 00:01:47,000 INFO    MainThread:238771 [internal.py:wandb_internal():89] W&B internal server running at pid: 238771, started at: 2022-02-04 00:01:46.978982
+2022-02-04 00:01:47,004 INFO    WriterThread:238771 [datastore.py:open_for_write():77] open: /WAVE/users/unix/tpandey/wandb/run-20220204_000134-2lkkmcfj/run-2lkkmcfj.wandb
+2022-02-04 00:01:47,005 DEBUG   HandlerThread:238771 [handler.py:handle_request():131] handle_request: check_version
+2022-02-04 00:01:47,163 DEBUG   SenderThread:238771 [sender.py:send():235] send: header
+2022-02-04 00:01:47,163 DEBUG   SenderThread:238771 [sender.py:send_request():249] send_request: check_version
+2022-02-04 00:01:47,225 DEBUG   SenderThread:238771 [sender.py:send():235] send: run
+2022-02-04 00:01:47,287 INFO    SenderThread:238771 [sender.py:_maybe_setup_resume():489] checking resume status for None/train/2lkkmcfj
+2022-02-04 00:01:50,614 ERROR   SenderThread:238771 [retry.py:__call__():126] Retry attempt failed:
+Traceback (most recent call last):
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    conn = self._new_conn()
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f6b9f7f8430>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f6b9f7f8430>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 102, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 140, in execute
+    return self.client.execute(*args, **kwargs)
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/requests/api.py", line 117, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/WAVE/users/unix/tpandey/yolo-env/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f6b9f7f8430>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2022-02-04 00:02:10,100 DEBUG   HandlerThread:238771 [handler.py:handle_request():131] handle_request: shutdown
+2022-02-04 00:02:10,105 INFO    HandlerThread:238771 [handler.py:finish():739] shutting down handler
+2022-02-04 00:02:11,039 INFO    WriterThread:238771 [datastore.py:close():281] close: /WAVE/users/unix/tpandey/wandb/run-20220204_000134-2lkkmcfj/run-2lkkmcfj.wandb

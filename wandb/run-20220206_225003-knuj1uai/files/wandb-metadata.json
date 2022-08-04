@@ -1,0 +1,35 @@
+{
+    "os": "Linux-5.4.144+-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.7.12",
+    "heartbeatAt": "2022-02-06T22:50:06.553804",
+    "startedAt": "2022-02-06T22:50:03.102346",
+    "docker": null,
+    "cpu_count": 2,
+    "cuda": null,
+    "args": [
+        "--img",
+        "960",
+        "--batch",
+        "16",
+        "--epochs",
+        "15",
+        "--data",
+        "findVehicles.yaml",
+        "--weights",
+        "yolov5s.pt",
+        "--workers",
+        "2"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/ultralytics/yolov5",
+        "commit": "dc7e093071fc75221ca3627ec1e385c79eeaef72"
+    },
+    "email": null,
+    "root": "/content/yolov5",
+    "host": "486bf32d0c8c",
+    "username": "root",
+    "executable": "/usr/bin/python3"
+}

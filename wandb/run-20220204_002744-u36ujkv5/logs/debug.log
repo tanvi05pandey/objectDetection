@@ -1,0 +1,25 @@
+2022-02-04 00:27:44,651 INFO    MainThread:8419 [wandb_setup.py:_flush():75] Loading settings from /WAVE/users/unix/tpandey/.config/wandb/settings
+2022-02-04 00:27:44,651 INFO    MainThread:8419 [wandb_setup.py:_flush():75] Loading settings from /WAVE/users/unix/tpandey/wandb/settings
+2022-02-04 00:27:44,651 INFO    MainThread:8419 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-02-04 00:27:44,652 INFO    MainThread:8419 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'yolov5/train.py', 'program': 'yolov5/train.py'}
+2022-02-04 00:27:44,652 INFO    MainThread:8419 [wandb_setup.py:_flush():75] Applying login settings: {'login_timeout': 30}
+2022-02-04 00:27:44,652 INFO    MainThread:8419 [wandb_init.py:_log_setup():386] Logging user logs to /WAVE/users/unix/tpandey/wandb/run-20220204_002744-u36ujkv5/logs/debug.log
+2022-02-04 00:27:44,652 INFO    MainThread:8419 [wandb_init.py:_log_setup():387] Logging internal logs to /WAVE/users/unix/tpandey/wandb/run-20220204_002744-u36ujkv5/logs/debug-internal.log
+2022-02-04 00:27:44,653 INFO    MainThread:8419 [wandb_init.py:init():420] calling init triggers
+2022-02-04 00:27:44,653 INFO    MainThread:8419 [wandb_init.py:init():425] wandb.init called with sweep_config: {}
+config: {'weights': 'yolov5/yolov5s.pt', 'cfg': '', 'data': 'yolov5/findVehicles.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.1, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0, 'copy_paste': 0.0}, 'epochs': 100, 'batch_size': 16, 'imgsz': 640, 'rect': False, 'resume': False, 'nosave': False, 'noval': False, 'noautoanchor': False, 'evolve': None, 'bucket': '', 'cache': None, 'image_weights': False, 'device': '', 'multi_scale': False, 'single_cls': False, 'optimizer': 'SGD', 'sync_bn': False, 'workers': 8, 'project': 'yolov5/runs/train', 'name': 'exp', 'exist_ok': False, 'quad': False, 'linear_lr': False, 'label_smoothing': 0.0, 'patience': 100, 'freeze': [0], 'save_period': -1, 'local_rank': -1, 'entity': None, 'upload_dataset': False, 'bbox_interval': -1, 'artifact_alias': 'latest', 'save_dir': 'yolov5/runs/train/exp7'}
+2022-02-04 00:27:44,653 INFO    MainThread:8419 [wandb_init.py:init():471] starting backend
+2022-02-04 00:27:44,654 INFO    MainThread:8419 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-02-04 00:27:44,682 INFO    MainThread:8419 [backend.py:ensure_launched():219] starting backend process...
+2022-02-04 00:27:44,694 INFO    MainThread:8419 [backend.py:ensure_launched():224] started backend process with pid: 8441
+2022-02-04 00:27:44,696 INFO    MainThread:8419 [wandb_init.py:init():480] backend started and connected
+2022-02-04 00:27:44,708 INFO    MainThread:8419 [wandb_init.py:init():550] updated telemetry
+2022-02-04 00:27:44,768 INFO    MainThread:8419 [wandb_init.py:init():581] communicating current version
+2022-02-04 00:27:46,737 INFO    MainThread:8419 [wandb_init.py:init():586] got version response 
+2022-02-04 00:27:46,737 INFO    MainThread:8419 [wandb_init.py:init():596] communicating run to backend with 30 second timeout
+2022-02-04 00:28:16,739 INFO    MainThread:8419 [interface_shared.py:_communicate_run():313] couldn't get run from backend
+2022-02-04 00:28:16,740 ERROR   MainThread:8419 [wandb_init.py:init():601] backend process timed out
+2022-02-04 00:28:16,740 ERROR   MainThread:8419 [wandb_init.py:init():610] encountered error: Error communicating with wandb process
+try: wandb.init(settings=wandb.Settings(start_method='fork'))
+or:  wandb.init(settings=wandb.Settings(start_method='thread'))
+For more info see: https://docs.wandb.ai/library/init#init-start-error
