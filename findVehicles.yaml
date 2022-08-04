@@ -1,0 +1,7 @@
+train: train/images/
+val: val/images/
+test: test/images/
+
+# Classes
+nc: 7 # number of classes
+names: ['small truck', 'medium truck', 'large truck', 'bus', 'van', 'suv', 'car'] # class names
