@@ -11,6 +11,7 @@ I use yolov5s as the pretrained model to start training from. It is the smallest
 To begin training, I created a batch job and stored it in a file named objectDetection.sh. The command in the file that starts training is:
 python yolov5/train.py --img 640 --batch 16 --epochs 300 --data yolov5/findVehicles.yaml --freeze 10 > detect.log
 As suggested in Yolov5 documentation, I began training the model on default parameters and got decent results. To implement transfer learning, I froze Yolov5 layers to quickly retrain the model on new data. I chose to freeze the model’s backbone layers 0-9. This change reduces accuracy very slightly but speeds up the training.
+
 A sample output image with bounding boxes is shown below:
 
 ![00005](https://user-images.githubusercontent.com/4620848/182739765-c7a41864-96d4-48cf-b1bd-33fce9a18d80.jpeg)
